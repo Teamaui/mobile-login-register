@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors -->
+    <color name="white">#FFFF</color>
+    <color name="primary_098db3">#098DB3</color>
+    <color name="primary_ccaee00">#CCAE00</color>
+    <color name="red">#E91E63</color>
+
+    <!-- Darker Variants -->
+    <color name="primary_dark_098db3">#087C9D</color>
+    <color name="primary_dark_ccaee00">#B39700</color>
+
+    <!-- Lighter Variants -->
+    <color name="primary_light_098db3">#0A9FCB</color>
+    <color name="primary_light_ccaee00">#E6C900</color>
+
+    <!-- Accent Colors -->
+    <color name="accent_098db3_dark">#046B85</color>
+    <color name="accent_ccaee00_dark">#998500</color>
+    <color name="accent_098db3_light">#56BEDA</color>
+    <color name="accent_ccaee00_light">#FFD700</color>
+    <color name="accent_9AD0DF_hint">#9AD0DF</color>
+
+    <!-- Neutral Colors -->
+    <color name="neutral_light">#F5F5F5</color>
+    <color name="neutral_medium">#DDDDDD</color>
+    <color name="neutral_dark">#707070</color>
+
+    <!-- Complementary Colors -->
+    <color name="complementary_098db3">#B35D09</color>
+    <color name="complementary_ccaee00">#004FCC</color>
+    <color name="background">#F7F7F7</color>
+    <!--    Color Project    -->
+    <color name="primaryOne">#098DB3</color>
+    <color name="secondaryOne">#9AD0DF</color>
+    <color name="emas">#CCAE00</color>
+    <color name="kuning">#F1DC5D</color>
+    <color name="magenta">#CC00A0</color>
+    <color name="putihabu">#F7F7F7</color>
+</resources>

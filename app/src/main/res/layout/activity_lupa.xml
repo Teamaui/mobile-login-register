@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.LupaActivity">
+
+
+    <ImageView
+        android:id="@+id/imgLupa"
+        android:layout_width="311dp"
+        android:layout_height="224dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgBack"
+        app:srcCompat="@drawable/lupa" />
+
+    <ImageView
+        android:id="@+id/imgBack"
+        android:layout_width="51dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="310dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.247"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+    <TextView
+        android:id="@+id/txtLupaSandi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Lupa Sandi"
+        android:textColor="@color/primary_098db3"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.115"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgLupa" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Masukkan NIK dan email Anda"
+        android:textColor="@color/accent_9AD0DF_hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.154"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLupaSandi" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="untuk mengatur ulang kata sandi"
+        android:textColor="@color/accent_9AD0DF_hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtNik"
+        android:layout_width="412dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="20dp"
+        app:boxBackgroundColor="@color/secondaryOne"
+        app:boxStrokeColor="@android:color/transparent"
+        app:boxStrokeWidth="0dp"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:startIconDrawable="@drawable/ic_123_24"
+        app:startIconTint="@color/primary_098db3"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:hint="Masukkan NIK"
+            android:textColor="@color/primary_098db3"
+            android:textColorHint="@color/primary_098db3" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtNomorHP"
+        android:layout_width="412dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="10dp"
+        app:boxBackgroundColor="@color/secondaryOne"
+        app:boxStrokeColor="@android:color/transparent"
+        app:boxStrokeWidth="0dp"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNik"
+        app:startIconDrawable="@drawable/ic_email_24"
+        app:startIconTint="@color/primary_098db3"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:hint="Masukkan alamat email"
+            android:textColor="@color/primary_098db3"
+            android:textColorHint="@color/primary_098db3" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnSelanjutnya1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginRight="35dp"
+        android:backgroundTint="@color/primary_098db3"
+        android:paddingVertical="15dp"
+        android:text="Selanjutnya"
+        android:textSize="18dp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNomorHP"
+        app:layout_constraintVertical_bias="0.241" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

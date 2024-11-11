@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.RegisterActivity">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="250dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/ovalbiru"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:text="Registrasi"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintVertical_bias="0.375" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="312dp"
+        android:layout_height="174dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:srcCompat="@drawable/register1" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="412dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="20dp"
+        app:boxBackgroundColor="@color/secondaryOne"
+        app:boxStrokeColor="@android:color/transparent"
+        app:boxStrokeWidth="0dp"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:startIconDrawable="@drawable/ic_123_24"
+        app:startIconTint="@color/primary_098db3"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:hint="Masukkan NIK"
+            android:textColor="@color/primary_098db3"
+            android:textColorHint="@color/primary_098db3" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtNomorHP"
+        android:layout_width="412dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="10dp"
+        app:boxBackgroundColor="@color/secondaryOne"
+        app:boxStrokeColor="@android:color/transparent"
+        app:boxStrokeWidth="0dp"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        app:startIconDrawable="@drawable/ic_phone"
+        app:startIconTint="@color/primary_098db3"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:hint="Masukkan nomor telepon"
+            android:textColor="@color/primary_098db3"
+            android:textColorHint="@color/primary_098db3" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtPassword"
+        android:layout_width="412dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="10dp"
+        app:boxBackgroundColor="@color/secondaryOne"
+        app:boxStrokeColor="@android:color/transparent"
+        app:boxStrokeWidth="0dp"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/primary_098db3"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNomorHP"
+        app:startIconDrawable="@drawable/ic_lock_24"
+        app:startIconTint="@color/primary_098db3"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:hint="Masukkan kata sandi"
+            android:inputType="textPassword"
+            android:textColor="@color/primary_098db3"
+            android:textColorHint="@color/primary_098db3" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtKonfirm"
+        android:layout_width="412dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="10dp"
+        app:boxBackgroundColor="@color/secondaryOne"
+        app:boxStrokeColor="@android:color/transparent"
+        app:boxStrokeWidth="0dp"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/primary_098db3"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPassword"
+        app:startIconDrawable="@drawable/ic_lock_24"
+        app:startIconTint="@color/primary_098db3"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:hint="Konfirmasi kata sandi"
+            android:inputType="textPassword"
+            android:textColor="@color/primary_098db3"
+            android:textColorHint="@color/primary_098db3" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnDaftar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginRight="35dp"
+        android:backgroundTint="@color/primary_098db3"
+        android:paddingVertical="15dp"
+        android:text="Daftar"
+        android:textSize="18dp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtKonfirm" />
+
+    <TextView
+        android:id="@+id/txtSudah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:text="Sudah punya akun?"
+        android:textColor="@color/accent_9AD0DF_hint"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDaftar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtMasuk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Masuk"
+        android:textColor="@color/primary_098db3"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtSudah"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/txtSudah"
+        app:layout_constraintTop_toTopOf="@+id/txtSudah" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
